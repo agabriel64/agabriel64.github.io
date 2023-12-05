@@ -1,0 +1,94 @@
+body {
+    font-family: circular, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em 1em;
+    border-bottom: 1px solid #E0F0F7;
+}
+
+.right-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo-image img, .logo-image {
+    max-width: 95px;
+    text-align: flex-start; /* There's no 'text-align' property with 'flex-start' value. It should be 'align-self'. Removed for clarity. */
+}
+
+.menu-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-links li {
+    margin-right: 2em;
+}
+
+.menu-links li:last-child {
+    margin-right: 0;
+}
+
+.menu-links a {
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 2em;
+    padding: 0.5em 0.8em;
+}
+
+.menu-links a:hover {
+    background-color: #ebeaed;
+}
+
+.user-actions {
+    margin-left: 1em;
+}
+
+.user-actions button {
+    padding: 0.8em 1.2em;
+    border-radius: 2em;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 0.9em;
+}
+
+.get-free-loom-btn, .sign-in-btn {
+    border: none;
+    transition: background-color 0.2s ease-in-out; /* Moved common transition to both buttons */
+}
+
+.get-free-loom-btn {
+    background-color: #534eed;
+    color: #fff;
+}
+
+.get-free-loom-btn:hover {
+    background-color: #332deb;
+}
+
+.sign-in-btn {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #dad8e0;
+}
+
+.sign-in-btn:hover {
+    background-color: #ebeaed;
+    border: 1px solid #cbc8d2;
+}
+
+@media (max-width: 768px) {
+    .hidden-on-mobile {
+        display: none;
+    }
+}
